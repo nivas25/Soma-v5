@@ -28,6 +28,8 @@ htmlcov/
 .cache/
 hf_cache/
 *.lock.bak
+huggingface/
+models/
 
 # Modal
 .modal.toml

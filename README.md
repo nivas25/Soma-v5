@@ -1,3 +1,14 @@
+---
+language:
+- en
+license: mit
+tags:
+- text-classification
+- lora
+- ubuntu-irc
+datasets:
+- jkkummerfeld/irc_disentangle
+---
 # SOMA gate
 
 A **SPEAK | SILENT** helper-bot gate for multi-party Ubuntu IRC. A 7B LoRA student decides whether an extra helper should talk **after the last line** of a 12-line window. It is **not** a Theory-of-Mind stack, not PPO, not emotion, and not a reply writer.

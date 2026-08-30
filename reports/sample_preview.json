@@ -1,0 +1,188 @@
+{
+  "dataset": "jkkummerfeld/irc_disentangle",
+  "config": "ubuntu",
+  "split": "train",
+  "n": 20,
+  "rows": [
+    {
+      "id": 0,
+      "raw": "[09:14] <crimsun> kleedrac: I'm afraid not. Any version of mplayer except for -k7* should work for your cpu",
+      "ascii": "[09:14] <crimsun> kleedrac: I'm afraid not. Any version of mplayer except for -k7* should work for your cpu",
+      "tokenized": "<s> <user> : i 'm afraid not . any version of mplayer except for <unk#a*-> should work for your cpu </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 0
+    },
+    {
+      "id": 1,
+      "raw": "[09:14] <intinig> does a subversion gnome client exist?",
+      "ascii": "[09:14] <intinig> does a subversion gnome client exist?",
+      "tokenized": "<s> does a subversion gnome client exist ? </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 1
+    },
+    {
+      "id": 2,
+      "raw": "[09:14] <kleedrac> crimsun: Hmmm ... I wonder why it does that?",
+      "ascii": "[09:14] <kleedrac> crimsun: Hmmm ... I wonder why it does that?",
+      "tokenized": "<s> <user> : hmmm ... i wonder why it does that ? </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 2
+    },
+    {
+      "id": 3,
+      "raw": "[09:15] <will> best media player: VLC /get wxvlc) It plays everything!",
+      "ascii": "[09:15] <will> best media player: VLC /get wxvlc) It plays everything!",
+      "tokenized": "<s> best media player : vlc <unka/> wxvlc ) it plays everything ! </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 3
+    },
+    {
+      "id": 4,
+      "raw": "[09:15] <|QuaD-> will: totem has caused me no troubles",
+      "ascii": "[09:15] <|QuaD-> will: totem has caused me no troubles",
+      "tokenized": "<s> will : totem has caused me no troubles </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 4
+    },
+    {
+      "id": 5,
+      "raw": "[09:15] <|QuaD-> totem xine",
+      "ascii": "[09:15] <|QuaD-> totem xine",
+      "tokenized": "<s> totem xine </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 5
+    },
+    {
+      "id": 6,
+      "raw": "[09:15] <crimsun> kleedrac: good question.",
+      "ascii": "[09:15] <crimsun> kleedrac: good question.",
+      "tokenized": "<s> <user> : good question . </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 6
+    },
+    {
+      "id": 7,
+      "raw": "[09:15] <Tsjoklate> |QuaD same here.. totem-xine werkt geweldig",
+      "ascii": "[09:15] <Tsjoklate> |QuaD same here.. totem-xine werkt geweldig",
+      "tokenized": "<s> |quad same here .. totem-xine <unka> <unka> </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 7
+    },
+    {
+      "id": 8,
+      "raw": "[09:15] <crimsun> intinig: I don't see one in warty or hoary",
+      "ascii": "[09:15] <crimsun> intinig: I don't see one in warty or hoary",
+      "tokenized": "<s> <user> : i do n't see one in warty or hoary </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 8
+    },
+    {
+      "id": 9,
+      "raw": "[09:15] <kleedrac> xine is working great for video and xmms works great for mp3's but some of my music is in .wma as my wife ripped it",
+      "ascii": "[09:15] <kleedrac> xine is working great for video and xmms works great for mp3's but some of my music is in .wma as my wife ripped it",
+      "tokenized": "<s> xine is working great for video and xmms works great for mp3 's but some of my music is in .wma as my wife ripped it </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 9
+    },
+    {
+      "id": 10,
+      "raw": "=== L0sT [~waa3@raptor.ukc.ac.uk]  has joined #ubuntu",
+      "ascii": "=== L0sT [~waa3@raptor.ukc.ac.uk]  has joined #ubuntu",
+      "tokenized": "<s> <user> <unk#a[_~> <unka.@]_> has joined #ubuntu </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 10
+    },
+    {
+      "id": 11,
+      "raw": "[09:16] <will> xine is very good, with w32codecs",
+      "ascii": "[09:16] <will> xine is very good, with w32codecs",
+      "tokenized": "<s> xine is very good , with w32codecs </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 11
+    },
+    {
+      "id": 12,
+      "raw": "[09:16] <|QuaD-> kleedrac: heh.. never needed a wma file played",
+      "ascii": "[09:16] <|QuaD-> kleedrac: heh.. never needed a wma file played",
+      "tokenized": "<s> <user> : heh .. never needed a wma file played </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 12
+    },
+    {
+      "id": 13,
+      "raw": "[09:16] <crimsun> intinig: however, there's always gsvn, as in http://gsvn.tigris.org/",
+      "ascii": "[09:16] <crimsun> intinig: however, there's always gsvn, as in http://gsvn.tigris.org/",
+      "tokenized": "<s> <user> : however , there 's always <unka> , as in URL/http:/ <unka./> </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 13
+    },
+    {
+      "id": 14,
+      "raw": "[09:16] <will> but post processing with VLC is the way forward, it uses its own codecs (builtin)",
+      "ascii": "[09:16] <will> but post processing with VLC is the way forward, it uses its own codecs (builtin)",
+      "tokenized": "<s> but post processing with vlc is the way forward , it uses its own codecs ( builtin ) </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 14
+    },
+    {
+      "id": 15,
+      "raw": "[09:16] <kleedrac> Quad: consider yourself lucky :) worse quality than mp3 ... wish she'd learn to use oggenc that's why I installed it :)",
+      "ascii": "[09:16] <kleedrac> Quad: consider yourself lucky :) worse quality than mp3 ... wish she'd learn to use oggenc that's why I installed it :)",
+      "tokenized": "<s> quad : consider yourself lucky :) worse quality than mp3 ... wish she'd learn to use oggenc that 's why i installed it :) </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 15
+    },
+    {
+      "id": 16,
+      "raw": "[09:17] <crimsun> intinig: that project, however, seems deprecated.",
+      "ascii": "[09:17] <crimsun> intinig: that project, however, seems deprecated.",
+      "tokenized": "<s> <user> : that project , however , seems deprecated . </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 16
+    },
+    {
+      "id": 17,
+      "raw": "[09:17] <intinig> what should I use then?",
+      "ascii": "[09:17] <intinig> what should I use then?",
+      "tokenized": "<s> what should i use then ? </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 17
+    },
+    {
+      "id": 18,
+      "raw": "[09:17] <|QuaD-> kleedrac: is ogg open source?",
+      "ascii": "[09:17] <|QuaD-> kleedrac: is ogg open source?",
+      "tokenized": "<s> <user> : is ogg open source ? </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 18
+    },
+    {
+      "id": 19,
+      "raw": "[09:17] <kleedrac> Quad: absolutely",
+      "ascii": "[09:17] <kleedrac> Quad: absolutely",
+      "tokenized": "<s> quad : absolutely </s>",
+      "date": "2004-12-25",
+      "connections": [],
+      "_index": 19
+    }
+  ]
+}

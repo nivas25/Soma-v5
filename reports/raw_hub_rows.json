@@ -1,0 +1,159 @@
+{
+  "snippet": [
+    {
+      "id": 9550,
+      "raw": "[06:53] <arog> hi",
+      "ascii": "[06:53] <arog> hi",
+      "tokenized": "<s> hi </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9551,
+      "raw": "[06:53] <arog> i just ran df -h and I noticed:: /dev/sda1       909G   15G  848G   2% /",
+      "ascii": "[06:53] <arog> i just ran df -h and I noticed:: /dev/sda1       909G   15G  848G   2% /",
+      "tokenized": "<s> i just ran df -h and i noticed :: DIR/dev/ DIR/sda1/ <unk#a> 15g <unk#a> 2% </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9552,
+      "raw": "[06:53] <arog> why is my size so large (909gb) but my available is only 848gb",
+      "ascii": "[06:53] <arog> why is my size so large (909gb) but my available is only 848gb",
+      "tokenized": "<s> why is my size so large ( <unk#a> ) but my available is only <unk#a> </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9553,
+      "raw": "[06:53] <arog> I find it difficult to believe ubuntu takes up almost 60gb",
+      "ascii": "[06:53] <arog> I find it difficult to believe ubuntu takes up almost 60gb",
+      "tokenized": "<s> i find it difficult to believe ubuntu takes up almost 60gb </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9554,
+      "raw": "[06:54] <arog> this is without a GUI as well",
+      "ascii": "[06:54] <arog> this is without a GUI as well",
+      "tokenized": "<s> this is without a gui as well </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9555,
+      "raw": "[06:54] <arog> anyone around?",
+      "ascii": "[06:54] <arog> anyone around?",
+      "tokenized": "<s> anyone around ? </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9556,
+      "raw": "[06:54] <mxvxrts> arog, partition sizes are counted in two ways that is about right.",
+      "ascii": "[06:54] <mxvxrts> arog, partition sizes are counted in two ways that is about right.",
+      "tokenized": "<s> <user> , partition sizes are counted in two ways that is about right . </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9557,
+      "raw": "[06:55] <dunbuggy> hey",
+      "ascii": "[06:55] <dunbuggy> hey",
+      "tokenized": "<s> hey </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9558,
+      "raw": "[06:55] <arog> mxvxrts: so from 900gb almost 50gb gets used up?!",
+      "ascii": "[06:55] <arog> mxvxrts: so from 900gb almost 50gb gets used up?!",
+      "tokenized": "<s> <user> : so from <unk#a> almost 50gb gets used up ?! </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9559,
+      "raw": "[06:55] <arog> that's crazy!",
+      "ascii": "[06:55] <arog> that's crazy!",
+      "tokenized": "<s> that 's crazy ! </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9560,
+      "raw": "[06:55] <mxvxrts> arog, THat is to full anyway",
+      "ascii": "[06:55] <mxvxrts> arog, THat is to full anyway",
+      "tokenized": "<s> <user> , that is to full anyway </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9561,
+      "raw": "[06:55] <Ben64> arog: it probably is reserved space",
+      "ascii": "[06:55] <Ben64> arog: it probably is reserved space",
+      "tokenized": "<s> <user> : it probably is reserved space </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9562,
+      "raw": "[06:55] <arog> what do you mean",
+      "ascii": "[06:55] <arog> what do you mean",
+      "tokenized": "<s> what do you mean </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9563,
+      "raw": "[06:55] <mxvxrts> arog, It is not crazy it is the way it is look it up.",
+      "ascii": "[06:55] <mxvxrts> arog, It is not crazy it is the way it is look it up.",
+      "tokenized": "<s> <user> , it is not crazy it is the way it is look it up . </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9564,
+      "raw": "[06:56] <arog> got a link?",
+      "ascii": "[06:56] <arog> got a link?",
+      "tokenized": "<s> got a link ? </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9565,
+      "raw": "[06:56] <arog> im not sure what to search for",
+      "ascii": "[06:56] <arog> im not sure what to search for",
+      "tokenized": "<s> im not sure what to search for </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9566,
+      "raw": "[06:57] <mxvxrts> arog, The difference is 1000MB for a gig and 1024 for a gig if I have the numbers correct.",
+      "ascii": "[06:57] <mxvxrts> arog, The difference is 1000MB for a gig and 1024 for a gig if I have the numbers correct.",
+      "tokenized": "<s> <user> , the difference is 1000mb for a gig and 1024 for a gig if i have the numbers correct . </s>",
+      "date": "2014-06-18",
+      "connections": []
+    },
+    {
+      "id": 9567,
+      "raw": "[06:57] <Ben64> arog: by default 5% of a filesystem is reserved for root, 5% of 909G is 45.45G, 45.45+15+848=908.45",
+      "ascii": "[06:57] <Ben64> arog: by default 5% of a filesystem is reserved for root, 5% of 909G is 45.45G, 45.45+15+848=908.45",
+      "tokenized": "<s> <user> : by default 5% of a filesystem is reserved for root , 5% of <unk#a> is <unk#a.> , <unk#+.=> </s>",
+      "date": "2014-06-18",
+      "connections": []
+    }
+  ],
+  "annotated_example_same_date": {
+    "id": 10389,
+    "raw": "[15:32] <daftykins> user123321: upgraded recently? tried an older kernel?",
+    "ascii": "[15:32] <daftykins> user123321: upgraded recently? tried an older kernel?",
+    "tokenized": "<s> <user> : upgraded recently ? tried an older kernel ? </s>",
+    "date": "2014-06-18",
+    "connections": [
+      10386,
+      10390
+    ]
+  }
+}

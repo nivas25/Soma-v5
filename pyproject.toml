@@ -1,0 +1,49 @@
+[project]
+name = "soma-data"
+version = "0.1.0"
+description = "SOMA gate data prep: Ubuntu IRC multi-party stream → labelling-ready windows"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "SOMA" }]
+dependencies = [
+    "datasets>=3.0.0",
+    "huggingface_hub>=0.25.0",
+    "pandas>=2.2.0",
+    "pyarrow>=16.0.0",
+    "pydantic>=2.7.0",
+    "regex>=2024.0.0",
+    "orjson>=3.10.0",
+    "typer>=0.12.0",
+    "rich>=13.7.0",
+    "loguru>=0.7.2",
+    "python-dotenv>=1.0.1",
+    "matplotlib>=3.8.0",
+    "numpy>=1.26.0",
+    "modal>=1.5.4",
+    "httpx>=0.28.1",
+    "tenacity>=9.1.4",
+    "fastapi>=0.141.1",
+    "uvicorn>=0.52.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2.0"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+soma_data = ["templates/*.html"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.uv]
+package = true

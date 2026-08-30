@@ -1,0 +1,564 @@
+{
+  "harvest": {
+    "speak": 5100,
+    "silent": 16250,
+    "n": 21350
+  },
+  "train": {
+    "speak": 5100,
+    "silent": 5100,
+    "n": 10200
+  },
+  "table1": {
+    "harvest_n": 21350,
+    "harvest_speak": 5100,
+    "harvest_silent": 16250,
+    "harvest_speak_pct": 23.89,
+    "train_n": 10200,
+    "train_speak": 5100,
+    "train_silent": 5100,
+    "train_speak_pct": 50.0,
+    "test_n": 200,
+    "test_speak": 90,
+    "test_silent": 110,
+    "test_speak_pct": 45.0,
+    "queue_n": 30000,
+    "tokens": {
+      "mean": 136.91,
+      "p50": 132.0,
+      "p90": 192.0,
+      "n": 10200
+    },
+    "n_speakers": {
+      "mean": 6.74,
+      "p50": 7.0,
+      "p90": 9.0,
+      "n": 10200
+    },
+    "year_min": 2004,
+    "year_max": 2018,
+    "unique_last_speakers_train": 5561,
+    "year_hist": [
+      {
+        "year": "2004",
+        "n": 216,
+        "speak_n": 25,
+        "speak_pct": 11.6
+      },
+      {
+        "year": "2005",
+        "n": 2311,
+        "speak_n": 531,
+        "speak_pct": 23.0
+      },
+      {
+        "year": "2006",
+        "n": 3062,
+        "speak_n": 816,
+        "speak_pct": 26.6
+      },
+      {
+        "year": "2007",
+        "n": 2326,
+        "speak_n": 638,
+        "speak_pct": 27.4
+      },
+      {
+        "year": "2008",
+        "n": 2013,
+        "speak_n": 590,
+        "speak_pct": 29.3
+      },
+      {
+        "year": "2009",
+        "n": 1365,
+        "speak_n": 309,
+        "speak_pct": 22.6
+      },
+      {
+        "year": "2010",
+        "n": 1789,
+        "speak_n": 438,
+        "speak_pct": 24.5
+      },
+      {
+        "year": "2011",
+        "n": 1627,
+        "speak_n": 341,
+        "speak_pct": 21.0
+      },
+      {
+        "year": "2012",
+        "n": 1119,
+        "speak_n": 244,
+        "speak_pct": 21.8
+      },
+      {
+        "year": "2013",
+        "n": 2029,
+        "speak_n": 453,
+        "speak_pct": 22.3
+      },
+      {
+        "year": "2014",
+        "n": 813,
+        "speak_n": 170,
+        "speak_pct": 20.9
+      },
+      {
+        "year": "2015",
+        "n": 1229,
+        "speak_n": 275,
+        "speak_pct": 22.4
+      },
+      {
+        "year": "2016",
+        "n": 330,
+        "speak_n": 68,
+        "speak_pct": 20.6
+      },
+      {
+        "year": "2017",
+        "n": 782,
+        "speak_n": 148,
+        "speak_pct": 18.9
+      },
+      {
+        "year": "2018",
+        "n": 149,
+        "speak_n": 36,
+        "speak_pct": 24.2
+      },
+      {
+        "year": "undated",
+        "n": 190,
+        "speak_n": 18,
+        "speak_pct": 9.5
+      }
+    ]
+  },
+  "table2": {
+    "overlap_n": 0,
+    "train_in_audit_n": 0,
+    "train_ubuntu": 10133,
+    "train_channel_two": 67,
+    "test_ubuntu": 200,
+    "test_channel_two": 0,
+    "harvest_ubuntu": 21160,
+    "harvest_channel_two": 190,
+    "test_year_range": "2004\u20132018",
+    "train_year_range": "2004\u20132018",
+    "test_2005_share_pct": 13.5,
+    "train_2005_share_pct": 11.1,
+    "year_mix": [
+      {
+        "year": "2004",
+        "train_n": 85,
+        "test_n": 3
+      },
+      {
+        "year": "2005",
+        "train_n": 1131,
+        "test_n": 27
+      },
+      {
+        "year": "2006",
+        "train_n": 1527,
+        "test_n": 23
+      },
+      {
+        "year": "2007",
+        "train_n": 1175,
+        "test_n": 22
+      },
+      {
+        "year": "2008",
+        "train_n": 1015,
+        "test_n": 19
+      },
+      {
+        "year": "2009",
+        "train_n": 608,
+        "test_n": 18
+      },
+      {
+        "year": "2010",
+        "train_n": 850,
+        "test_n": 10
+      },
+      {
+        "year": "2011",
+        "train_n": 772,
+        "test_n": 13
+      },
+      {
+        "year": "2012",
+        "train_n": 522,
+        "test_n": 9
+      },
+      {
+        "year": "2013",
+        "train_n": 942,
+        "test_n": 21
+      },
+      {
+        "year": "2014",
+        "train_n": 381,
+        "test_n": 6
+      },
+      {
+        "year": "2015",
+        "train_n": 549,
+        "test_n": 14
+      },
+      {
+        "year": "2016",
+        "train_n": 147,
+        "test_n": 3
+      },
+      {
+        "year": "2017",
+        "train_n": 347,
+        "test_n": 11
+      },
+      {
+        "year": "2018",
+        "train_n": 82,
+        "test_n": 1
+      },
+      {
+        "year": "undated",
+        "train_n": 67,
+        "test_n": 0
+      }
+    ]
+  },
+  "table3": {
+    "train": {
+      "SPEAK": {
+        "n": 5100,
+        "last_is_question_pct": 71.3,
+        "addressed_to_nonempty_pct": 7.4,
+        "last_is_thanks_pct": 0.6,
+        "helper_in_window_pct": 1.8,
+        "n_speakers_mean": 6.94,
+        "n_q": 3634,
+        "n_addr": 375,
+        "n_thanks": 32,
+        "n_helper": 94
+      },
+      "SILENT": {
+        "n": 5100,
+        "last_is_question_pct": 33.3,
+        "addressed_to_nonempty_pct": 49.8,
+        "last_is_thanks_pct": 3.0,
+        "helper_in_window_pct": 82.4,
+        "n_speakers_mean": 6.54,
+        "n_q": 1700,
+        "n_addr": 2541,
+        "n_thanks": 152,
+        "n_helper": 4202
+      }
+    },
+    "test": {
+      "SPEAK": {
+        "n": 90,
+        "last_is_question_pct": 65.6,
+        "addressed_to_nonempty_pct": 6.7,
+        "last_is_thanks_pct": 0.0,
+        "helper_in_window_pct": 16.7,
+        "n_speakers_mean": 6.79,
+        "n_q": 59,
+        "n_addr": 6,
+        "n_thanks": 0,
+        "n_helper": 15
+      },
+      "SILENT": {
+        "n": 110,
+        "last_is_question_pct": 29.1,
+        "addressed_to_nonempty_pct": 31.8,
+        "last_is_thanks_pct": 9.1,
+        "helper_in_window_pct": 76.4,
+        "n_speakers_mean": 6.07,
+        "n_q": 32,
+        "n_addr": 35,
+        "n_thanks": 10,
+        "n_helper": 84
+      }
+    }
+  },
+  "table4": {
+    "one_one": {
+      "speak": 5100,
+      "silent": 5100,
+      "n": 10200,
+      "speak_pct": 50.0
+    },
+    "one_three": {
+      "speak": 5100,
+      "silent": 15300,
+      "n": 20400,
+      "speak_pct": 25.0
+    },
+    "natural": {
+      "speak": 5100,
+      "silent": 16250,
+      "n": 21350,
+      "speak_pct": 23.89
+    }
+  },
+  "shift_flags": [
+    {
+      "class": "SPEAK",
+      "feature": "helper_in_window_pct",
+      "train_pct": 1.8,
+      "test_pct": 16.7,
+      "delta_pp": 14.9
+    },
+    {
+      "class": "SILENT",
+      "feature": "addressed_to_nonempty_pct",
+      "train_pct": 49.8,
+      "test_pct": 31.8,
+      "delta_pp": -18.0
+    }
+  ],
+  "leak": {
+    "dup_chat_block_n": 0,
+    "dup_chat_block_windows": 0,
+    "last_line_ge5_types": 0,
+    "last_line_top_count": 3,
+    "last_line_top": "BigToe: When trying to import a .MOV from my Easyshare C433 camera, recognised as a PTP class camera, through gthumb it freezes. How can I import this video without crashing?",
+    "empty_chat_block_n": 0,
+    "parse_fail_n": 1,
+    "parse_fail_ids": "ubuntu:train:2011-08-22:101:0:154432",
+    "train_in_audit": 0,
+    "train_in_used": 820,
+    "train_missing_helper_flag": 0,
+    "train_v1_n": 0,
+    "harvest_dup_window_ids": 0,
+    "helper_in_window_recomputed_n": 21350,
+    "silent_strata_train": {
+      "other": 1700,
+      "question": 1700,
+      "addressed": 1700
+    },
+    "silent_strata_pool": {
+      "other": 6056,
+      "question": 4013,
+      "addressed": 6181
+    }
+  },
+  "examples": {
+    "train_speak": [
+      {
+        "window_id": "ubuntu:train:2010-01-04:82:0:126325",
+        "label": "SPEAK",
+        "last_line": "lucas_: LG X110 WEBCAM NOT",
+        "context_lines": [
+          "ondra: kinja-sheep, I've got it installed, but that god damn thing is still not working",
+          "lowki: biznock09: use rm",
+          "bitplane: Halvor, go to a command line and try running one of the apps from there",
+          "lucas_: LG X110 WEBCAM NOT"
+        ],
+        "helper_in_window": "no",
+        "last_is_question": false,
+        "addressed_to": "",
+        "extra": ""
+      },
+      {
+        "window_id": "ubuntu:train:2006-09-24:41:0:62385",
+        "label": "SPEAK",
+        "last_line": "THX-1138: Bacuruda - Did that help?",
+        "context_lines": [
+          "new2linx: yes",
+          "Telroth_Plushie|: any help for me?",
+          "admin_: hmm, becuase i keep trying to boot xubuntu on an old imac, and after it loads, and then when X is supposed to start, the screen shits off",
+          "THX-1138: Bacuruda - Did that help?"
+        ],
+        "helper_in_window": "no",
+        "last_is_question": true,
+        "addressed_to": "",
+        "extra": ""
+      },
+      {
+        "window_id": "ubuntu:train:2005-12-23:18:0:26313",
+        "label": "SPEAK",
+        "last_line": "lacking: Ok whats the best P2P mp3 software and yes please make it illegal?",
+        "context_lines": [
+          "soundray: izi_, /var/log/syslog",
+          "soundray: izi_, e.g. grep wpa /var/log/syslog",
+          "CaptainMorgan: any folks familiar with Emacs ? i can't get bold font to stay saved after a reloading of the program... but I can keep the fontstyle... ??",
+          "lacking: Ok whats the best P2P mp3 software and yes please make it illegal?"
+        ],
+        "helper_in_window": "no",
+        "last_is_question": true,
+        "addressed_to": "",
+        "extra": ""
+      },
+      {
+        "window_id": "ubuntu:train:2007-01-29:49:0:74654",
+        "label": "SPEAK",
+        "last_line": "black_13_: how do i view tiff images embedded in a web page?",
+        "context_lines": [
+          "whonicca: has anybody gotten videos on zhare.net to work?",
+          "stepanstas: xtknight, is that what you want",
+          "xtknight: worldedit: then you should have 32bit firefox as far as i know",
+          "black_13_: how do i view tiff images embedded in a web page?"
+        ],
+        "helper_in_window": "no",
+        "last_is_question": true,
+        "addressed_to": "",
+        "extra": ""
+      }
+    ],
+    "train_silent": [
+      {
+        "window_id": "ubuntu:train:2011-04-14:97:0:148495",
+        "label": "SILENT",
+        "last_line": "edbian: Ben64: :)",
+        "context_lines": [
+          "edbian: pfifo: if admin is a group then in /etc/sudoers you need %admin ALL=(ALL) ALL",
+          "edbian: a percent sign is needed for groups",
+          "Ben64: edbian: nice catch, i didn't notice the missing %",
+          "edbian: Ben64: :)"
+        ],
+        "helper_in_window": "yes",
+        "last_is_question": false,
+        "addressed_to": "Ben64",
+        "extra": ""
+      },
+      {
+        "window_id": "ubuntu:train:2005-05-19:5:0:8033",
+        "label": "SILENT",
+        "last_line": "jsgotangco: mole_, that's great, refer to http://udu.wiki.ubuntu.com/PDASupport",
+        "context_lines": [
+          "cbruggeman: ok bob2",
+          "cbruggeman: my problem is juste than i didn't arrive to install spip",
+          "ali4728: <bob2> it hangs..",
+          "jsgotangco: mole_, that's great, refer to http://udu.wiki.ubuntu.com/PDASupport"
+        ],
+        "helper_in_window": "yes",
+        "last_is_question": false,
+        "addressed_to": "",
+        "extra": ""
+      },
+      {
+        "window_id": "ubuntu:train:2008-03-01:67:0:103026",
+        "label": "SILENT",
+        "last_line": "bl3u: dangermike: and yet modprobe -l |grep ath_pci returns nothing",
+        "context_lines": [
+          "nickrud: Long: alt f9 iirc",
+          "bl3u: dangermike: i do indeed have linux-restricted-modules-2.6.22-14-generic installed",
+          "sweetsinse: how can i force install and older version deb package",
+          "bl3u: dangermike: and yet modprobe -l |grep ath_pci returns nothing"
+        ],
+        "helper_in_window": "yes",
+        "last_is_question": false,
+        "addressed_to": "dangermike",
+        "extra": ""
+      },
+      {
+        "window_id": "ubuntu:train:2013-10-04:126:0:186389",
+        "label": "SILENT",
+        "last_line": "ActionParsnip: Dr_Willis: ha",
+        "context_lines": [
+          "ezra-s: ActionParsnip, I know, but it is the same as \"which distro is best for...\" question, so best reply is to look at the #channel you are in and reply",
+          "Dr_Willis: we all know Minix is best ;P",
+          "ActionParsnip: ezra-s: i tend to ignore channel, and advise on needs. There were no needs specified so there is no best",
+          "ActionParsnip: Dr_Willis: ha"
+        ],
+        "helper_in_window": "yes",
+        "last_is_question": false,
+        "addressed_to": "Dr_Willis",
+        "extra": ""
+      }
+    ],
+    "test_gold": [
+      {
+        "window_id": "ubuntu:train:2007-06-01:53:0:81409",
+        "label": "SPEAK",
+        "last_line": "djieno: leagris, what is the tool?",
+        "context_lines": [
+          "johnschroeder: sipior: oh i see, all i did was download the ubuntu server, and what your saying is i should have download everything?",
+          "tobyb: is having an XP disk image a good recovery safeguard in case I botch my Ubuntu dual-boot install attempt? can i restore the image and thus wipe out grub in my MBR?",
+          "lusepuster: ikonia: yes, but it isn't any hardware thing, that's what I mean",
+          "djieno: leagris, what is the tool?"
+        ],
+        "helper_in_window": "yes",
+        "last_is_question": true,
+        "addressed_to": "",
+        "extra": "Nivas=SPEAK  v2.2=SILENT  (DISAGREE)"
+      },
+      {
+        "window_id": "ubuntu:validation:2011-11-13:8:0:11093",
+        "label": "SPEAK",
+        "last_line": "puff: Can somebody help me with my disappearing sound?",
+        "context_lines": [
+          "altice: yep, with ya pfifo",
+          "Rya_n: How can I make the icon text narrower, or get rid of it altogether?",
+          "L1nuxRules: pfifo also dont advise people to advise people stuff above them",
+          "puff: Can somebody help me with my disappearing sound?"
+        ],
+        "helper_in_window": "no",
+        "last_is_question": true,
+        "addressed_to": "",
+        "extra": "Nivas=SPEAK  v2.2=SPEAK  (agree)"
+      },
+      {
+        "window_id": "ubuntu:train:2004-12-25:0:0:603",
+        "label": "SILENT",
+        "last_line": "seb128: that's been rewritten; that's a devel branch",
+        "context_lines": [
+          "oscarh: sorry, new to gnome",
+          "seb128: you don't",
+          "oscarh: seb, wonderfull",
+          "seb128: that's been rewritten; that's a devel branch"
+        ],
+        "helper_in_window": "no",
+        "last_is_question": false,
+        "addressed_to": "",
+        "extra": "Nivas=SILENT  v2.2=SPEAK  (DISAGREE)"
+      },
+      {
+        "window_id": "ubuntu:train:2010-02-13:83:0:127679",
+        "label": "SILENT",
+        "last_line": "sebsebseb: Flannel:  yeah seems I didn't put in the bit about 8.04 to 10.04 works hrm",
+        "context_lines": [
+          "ax: Flannel: yeah",
+          "ax: radeon",
+          "Sh3r1ff: Flannel: he has 8.04 for the moment",
+          "sebsebseb: Flannel:  yeah seems I didn't put in the bit about 8.04 to 10.04 works hrm"
+        ],
+        "helper_in_window": "yes",
+        "last_is_question": false,
+        "addressed_to": "Flannel",
+        "extra": "Nivas=SILENT  v2.2=SILENT  (agree)"
+      }
+    ]
+  },
+  "abstract_lines": [
+    "Domain: multi-party Ubuntu IRC support (Kummerfeld et al., ACL 2019; jkkummerfeld/irc_disentangle only \u2014 not Lowe/McGill).",
+    "Unit: W=12 consecutive non-system lines; decision is whether an extra helper-bot should SPEAK or stay SILENT after the last line.",
+    "Teacher: Qwen2.5-32B-Instruct bf16 on Modal H100, transformers.generate, temperature 0, max_new_tokens=80, prompt_version=pilot_v2.2.",
+    "Gold: 200 Nivas-reviewed windows (audit_200). Never in train. Test SPEAK rate is the gold rate, not the teacher rate.",
+    "Harvest (teacher, unlabeled-pool prior): 5100 SPEAK + 16250 SILENT (23.9% SPEAK) from 21350 parse-ok windows.",
+    "Exported train is balanced 1:1: 5100 SPEAK + 5100 SILENT (SILENT downsampled from 16250 with seed=42, strata addressed/question/other).",
+    "Room vs train: natural teacher SPEAK rate is ~24%; train is 50% by construction \u2014 a class-balance shift, not a new room.",
+    "Known shift vs Nivas: teacher is quieter than gold on the 200 (Gate 1 v2.2 SPEAK 40.5% vs gold 45.0%; overall agree 85.5%). Table 3 flags \u226510 pp feature-rate gaps.",
+    "Input template always includes helper_in_window=yes/no from the v2.2 thread-scoped rule (recomputed at export; not a stored harvest column).",
+    "sft_dev is empty (friends later). Do not mix v1 silver. Do not overwrite Nivas gold."
+  ],
+  "seed": 42,
+  "prompt_version": "pilot_v2.2",
+  "n_per_class": 5100,
+  "shift_threshold_pp": 10.0,
+  "figures": {
+    "class_counts": "reports/figures/dataset_class_counts_harvest_vs_train.png",
+    "speak_by_year": "reports/figures/dataset_speak_rate_by_year.png",
+    "n_speakers": "reports/figures/dataset_n_speakers_hist_by_class.png",
+    "question": "reports/figures/dataset_last_is_question_by_class.png",
+    "helper": "reports/figures/dataset_helper_in_window_by_class.png",
+    "tokens": "reports/figures/dataset_chat_tokens_box_by_class.png"
+  }
+}

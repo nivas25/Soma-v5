@@ -1,0 +1,93 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+HF_TOKEN
+*.pem
+credentials
+credentials.json
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Hugging Face / caches
+.cache/
+hf_cache/
+*.lock.bak
+
+# Modal
+.modal.toml
+.modal/
+
+# Raw IRC dumps — never git add data/raw
+data/raw/*
+!data/raw/.gitkeep
+
+# Interim parses / harvest dumps
+data/interim/*
+!data/interim/.gitkeep
+
+# Processed: keep gold test only (rebuild train via harvest + scripts 15–16)
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/sft_test.jsonl
+!data/processed/sft_dev.jsonl
+data/processed/*.parquet
+data/processed/sft_train*.jsonl
+data/processed/label_queue.csv
+data/processed/sft_template.jsonl
+
+# Silver teacher dumps (keep audit CSV + id lists)
+data/silver/*.jsonl
+data/silver/*.parquet
+data/silver/pilot_2k_raw/
+data/silver/harvest*
+data/silver/pilot_2k_work_payloads.json
+data/silver/pilot_2k_dry_run.json
+data/silver/pilot_2k_progress.json
+data/silver/pilot_2k_health.json
+data/silver/pilot_2k_modal_call.txt
+data/friends/*_done.csv
+data/friends/*_done.jsonl
+data/friends/*.bak.csv
+
+# Weights / adapters / OpenVINO
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+adapter_model*
+checkpoints/
+ov_models/
+reports/lora_run/adapters/
+reports/lora_run/checkpoints/
+lora_run/adapters
+
+# Frontend (none in this repo; ignore if added)
+frontend/node_modules/
+frontend/dist/
+node_modules/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.aux
+*.log

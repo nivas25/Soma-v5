@@ -1,0 +1,499 @@
+{
+  "generated_at_utc": "2026-08-28T13:14:17.556662+00:00",
+  "stage": "04_export",
+  "frozen": {
+    "WINDOW_SIZE": 12,
+    "MIN_HISTORY": 8,
+    "REQUIRE_EXACT_W": true,
+    "GAP_THRESHOLD": 5,
+    "SEED": 42,
+    "LABEL_QUEUE_CAP": 30000,
+    "TARGET_OTHER_FRACTION": 0.35
+  },
+  "reconciliation": {
+    "raw_snapshots": {
+      "channel_two/all_": 2602,
+      "channel_two/dev": 1001,
+      "channel_two/pilot": 501,
+      "channel_two/pilot_dev": 1501,
+      "channel_two/test": 1001,
+      "ubuntu/test": 15010,
+      "ubuntu/train": 220616,
+      "ubuntu/validation": 12510,
+      "_sum_snapshots": 254742
+    },
+    "parsed_messages": 250738,
+    "windows_full": 222954,
+    "label_queue": 30000,
+    "sft_template": 30000
+  },
+  "label_queue_mix": {
+    "n": 30000,
+    "last_is_question": 10725,
+    "question_frac": 0.3575,
+    "addressed": 11813,
+    "other_neither_q_nor_addressed": 10500,
+    "last_is_thanks": 744,
+    "note": "question_frac should be well below 0.90 after mixing in others / cap"
+  },
+  "gold_labels": "EMPTY \u2014 no SPEAK/SILENT model labels in this task",
+  "artifacts": {
+    "windows_full": "C:/Users/reddy/Desktop/Soma-v5/data/processed/windows_full.parquet",
+    "label_queue_csv": "C:/Users/reddy/Desktop/Soma-v5/data/processed/label_queue.csv",
+    "label_queue_parquet": "C:/Users/reddy/Desktop/Soma-v5/data/processed/label_queue.parquet",
+    "sft_template": "C:/Users/reddy/Desktop/Soma-v5/data/processed/sft_template.jsonl"
+  },
+  "from_02_analyze": {
+    "raw_rows_all_snapshots": 254742,
+    "raw_rows_windowing_partition": 250738,
+    "parsed_rows": 250738,
+    "card_annotated": {
+      "ubuntu/train": 67463,
+      "ubuntu/validation": 2500,
+      "ubuntu/dev": 2500,
+      "ubuntu/test": 5000,
+      "channel_two/all_": 2600
+    },
+    "eda_headline": {
+      "n_parsed": 250738,
+      "n_system": 25866,
+      "pct_system": 10.316,
+      "n_action": 1334,
+      "pct_action": 0.532,
+      "n_question": 50094,
+      "pct_question": 19.979,
+      "n_addressed": 66828,
+      "pct_addressed": 26.653,
+      "n_parse_fail": 178,
+      "pct_parse_fail": 0.071,
+      "n_annotated_nonempty_connections": 78250,
+      "messages_per_split": {
+        "channel_two/all_": 2602,
+        "ubuntu/test": 15010,
+        "ubuntu/train": 220616,
+        "ubuntu/validation": 12510
+      },
+      "n_date_keys": 174,
+      "messages_per_date_p50": 1501.0,
+      "messages_per_date_p90": 1501.0,
+      "messages_per_date_min": 1063,
+      "messages_per_date_max": 2602,
+      "unique_nicks_per_day_p50": 131.5,
+      "unique_nicks_per_day_p90": 171.70000000000002,
+      "connections_degree": {
+        "0": 172488,
+        "1": 32877,
+        "2+": 45373
+      },
+      "clock": {
+        "n_midnight_wraps": 25,
+        "n_non_wrap_backwards": 0,
+        "examples_wrap": [
+          "ubuntu/test 2013-09-01 id 8303->8304 23:58->00:02",
+          "ubuntu/test 2015-03-18 id 10949->10950 23:59->00:00",
+          "ubuntu/test 2016-06-08 id 13892->13893 23:59->00:00",
+          "ubuntu/train 2007-08-19 id 88050->88051 12:59->01:00",
+          "ubuntu/train 2008-07-03 id 113392->113393 23:59->00:00",
+          "ubuntu/train 2010-02-13 id 127646->127647 23:59->00:00",
+          "ubuntu/train 2011-04-14 id 147683->147684 23:59->00:00",
+          "ubuntu/train 2011-12-07 id 156675->156676 23:59->00:00"
+        ],
+        "examples_backwards": []
+      },
+      "gaps": {
+        "n_date_slices": 174,
+        "n_fully_contiguous_slices": 174,
+        "frac_contiguous": 1.0,
+        "n_gaps_gt_threshold": 0,
+        "gap_threshold": 5,
+        "max_missing_ids": 0,
+        "gap_p50": 0.0,
+        "gap_p90": 0.0,
+        "gap_p99": 0.0,
+        "n_extra_slices_from_id_reset": 0,
+        "runs_per_slice_p50": 1.0,
+        "runs_per_slice_p90": 1.0,
+        "examples_big_gaps": [],
+        "justification": "GAP_THRESHOLD=5 (new run iff id[t]-id[t-1] > 5). Kummerfeld 2019 samples 173 time slices of #ubuntu; ids are log-line numbers inside each file. Same-calendar-day files concatenated on the Hub reset id to 0 (new slice). Tiny holes (1\u20135) stay in-run so JOIN bursts we later drop do not shatter a real conversation. Jumps of 6+ are treated as a new run so we never glue two distant samples into one fake room."
+      }
+    },
+    "per_split": {
+      "channel_two/all_": {
+        "n_rows": 2602,
+        "columns": [
+          "id",
+          "raw",
+          "ascii",
+          "tokenized",
+          "connections",
+          "date",
+          "row_idx",
+          "config",
+          "split"
+        ],
+        "dtypes": {
+          "id": "int64",
+          "raw": "str",
+          "ascii": "str",
+          "tokenized": "str",
+          "connections": "object",
+          "date": "str",
+          "row_idx": "int64",
+          "config": "str",
+          "split": "str"
+        },
+        "null_rates_pct": {
+          "id": 0.0,
+          "raw": 0.0,
+          "ascii": 0.0,
+          "tokenized": 0.0,
+          "connections": 0.0,
+          "date": 0.0,
+          "row_idx": 0.0,
+          "config": 0.0,
+          "split": 0.0
+        },
+        "id_unique_per_date": true,
+        "n_duplicate_date_id": 0,
+        "connections_python_type": {
+          "ndarray": 2602
+        },
+        "n_empty_connections": 1,
+        "n_nonempty_connections": 2601,
+        "date_sentinel_only": true,
+        "n_unique_dates": 1,
+        "id_min": 0,
+        "id_max": 2601
+      },
+      "channel_two/dev": {
+        "n_rows": 1001,
+        "columns": [
+          "id",
+          "raw",
+          "ascii",
+          "tokenized",
+          "connections",
+          "date",
+          "row_idx",
+          "config",
+          "split"
+        ],
+        "dtypes": {
+          "id": "int64",
+          "raw": "str",
+          "ascii": "str",
+          "tokenized": "str",
+          "connections": "object",
+          "date": "str",
+          "row_idx": "int64",
+          "config": "str",
+          "split": "str"
+        },
+        "null_rates_pct": {
+          "id": 0.0,
+          "raw": 0.0,
+          "ascii": 0.0,
+          "tokenized": 0.0,
+          "connections": 0.0,
+          "date": 0.0,
+          "row_idx": 0.0,
+          "config": 0.0,
+          "split": 0.0
+        },
+        "id_unique_per_date": true,
+        "n_duplicate_date_id": 0,
+        "connections_python_type": {
+          "ndarray": 1001
+        },
+        "n_empty_connections": 1,
+        "n_nonempty_connections": 1000,
+        "date_sentinel_only": true,
+        "n_unique_dates": 1,
+        "id_min": 0,
+        "id_max": 1000
+      },
+      "channel_two/pilot": {
+        "n_rows": 501,
+        "columns": [
+          "id",
+          "raw",
+          "ascii",
+          "tokenized",
+          "connections",
+          "date",
+          "row_idx",
+          "config",
+          "split"
+        ],
+        "dtypes": {
+          "id": "int64",
+          "raw": "str",
+          "ascii": "str",
+          "tokenized": "str",
+          "connections": "object",
+          "date": "str",
+          "row_idx": "int64",
+          "config": "str",
+          "split": "str"
+        },
+        "null_rates_pct": {
+          "id": 0.0,
+          "raw": 0.0,
+          "ascii": 0.0,
+          "tokenized": 0.0,
+          "connections": 0.0,
+          "date": 0.0,
+          "row_idx": 0.0,
+          "config": 0.0,
+          "split": 0.0
+        },
+        "id_unique_per_date": true,
+        "n_duplicate_date_id": 0,
+        "connections_python_type": {
+          "ndarray": 501
+        },
+        "n_empty_connections": 1,
+        "n_nonempty_connections": 500,
+        "date_sentinel_only": true,
+        "n_unique_dates": 1,
+        "id_min": 0,
+        "id_max": 500
+      },
+      "channel_two/pilot_dev": {
+        "n_rows": 1501,
+        "columns": [
+          "id",
+          "raw",
+          "ascii",
+          "tokenized",
+          "connections",
+          "date",
+          "row_idx",
+          "config",
+          "split"
+        ],
+        "dtypes": {
+          "id": "int64",
+          "raw": "str",
+          "ascii": "str",
+          "tokenized": "str",
+          "connections": "object",
+          "date": "str",
+          "row_idx": "int64",
+          "config": "str",
+          "split": "str"
+        },
+        "null_rates_pct": {
+          "id": 0.0,
+          "raw": 0.0,
+          "ascii": 0.0,
+          "tokenized": 0.0,
+          "connections": 0.0,
+          "date": 0.0,
+          "row_idx": 0.0,
+          "config": 0.0,
+          "split": 0.0
+        },
+        "id_unique_per_date": true,
+        "n_duplicate_date_id": 0,
+        "connections_python_type": {
+          "ndarray": 1501
+        },
+        "n_empty_connections": 1,
+        "n_nonempty_connections": 1500,
+        "date_sentinel_only": true,
+        "n_unique_dates": 1,
+        "id_min": 0,
+        "id_max": 1500
+      },
+      "channel_two/test": {
+        "n_rows": 1001,
+        "columns": [
+          "id",
+          "raw",
+          "ascii",
+          "tokenized",
+          "connections",
+          "date",
+          "row_idx",
+          "config",
+          "split"
+        ],
+        "dtypes": {
+          "id": "int64",
+          "raw": "str",
+          "ascii": "str",
+          "tokenized": "str",
+          "connections": "object",
+          "date": "str",
+          "row_idx": "int64",
+          "config": "str",
+          "split": "str"
+        },
+        "null_rates_pct": {
+          "id": 0.0,
+          "raw": 0.0,
+          "ascii": 0.0,
+          "tokenized": 0.0,
+          "connections": 0.0,
+          "date": 0.0,
+          "row_idx": 0.0,
+          "config": 0.0,
+          "split": 0.0
+        },
+        "id_unique_per_date": true,
+        "n_duplicate_date_id": 0,
+        "connections_python_type": {
+          "ndarray": 1001
+        },
+        "n_empty_connections": 1,
+        "n_nonempty_connections": 1000,
+        "date_sentinel_only": true,
+        "n_unique_dates": 1,
+        "id_min": 0,
+        "id_max": 1000
+      },
+      "ubuntu/test": {
+        "n_rows": 15010,
+        "columns": [
+          "id",
+          "raw",
+          "ascii",
+          "tokenized",
+          "connections",
+          "date",
+          "row_idx",
+          "config",
+          "split"
+        ],
+        "dtypes": {
+          "id": "int64",
+          "raw": "str",
+          "ascii": "str",
+          "tokenized": "str",
+          "connections": "object",
+          "date": "str",
+          "row_idx": "int64",
+          "config": "str",
+          "split": "str"
+        },
+        "null_rates_pct": {
+          "id": 0.0,
+          "raw": 0.0,
+          "ascii": 0.0,
+          "tokenized": 0.0,
+          "connections": 0.0,
+          "date": 0.0,
+          "row_idx": 0.0,
+          "config": 0.0,
+          "split": 0.0
+        },
+        "id_unique_per_date": true,
+        "n_duplicate_date_id": 0,
+        "connections_python_type": {
+          "ndarray": 15010
+        },
+        "n_empty_connections": 9968,
+        "n_nonempty_connections": 5042,
+        "date_sentinel_only": false,
+        "n_unique_dates": 10,
+        "id_min": 0,
+        "id_max": 15009
+      },
+      "ubuntu/train": {
+        "n_rows": 220616,
+        "columns": [
+          "id",
+          "raw",
+          "ascii",
+          "tokenized",
+          "connections",
+          "date",
+          "row_idx",
+          "config",
+          "split"
+        ],
+        "dtypes": {
+          "id": "int64",
+          "raw": "str",
+          "ascii": "str",
+          "tokenized": "str",
+          "connections": "object",
+          "date": "str",
+          "row_idx": "int64",
+          "config": "str",
+          "split": "str"
+        },
+        "null_rates_pct": {
+          "id": 0.0,
+          "raw": 0.0,
+          "ascii": 0.0,
+          "tokenized": 0.0,
+          "connections": 0.0,
+          "date": 0.0,
+          "row_idx": 0.0,
+          "config": 0.0,
+          "split": 0.0
+        },
+        "id_unique_per_date": true,
+        "n_duplicate_date_id": 0,
+        "connections_python_type": {
+          "ndarray": 220616
+        },
+        "n_empty_connections": 152542,
+        "n_nonempty_connections": 68074,
+        "date_sentinel_only": false,
+        "n_unique_dates": 153,
+        "id_min": 0,
+        "id_max": 220615
+      },
+      "ubuntu/validation": {
+        "n_rows": 12510,
+        "columns": [
+          "id",
+          "raw",
+          "ascii",
+          "tokenized",
+          "connections",
+          "date",
+          "row_idx",
+          "config",
+          "split"
+        ],
+        "dtypes": {
+          "id": "int64",
+          "raw": "str",
+          "ascii": "str",
+          "tokenized": "str",
+          "connections": "object",
+          "date": "str",
+          "row_idx": "int64",
+          "config": "str",
+          "split": "str"
+        },
+        "null_rates_pct": {
+          "id": 0.0,
+          "raw": 0.0,
+          "ascii": 0.0,
+          "tokenized": 0.0,
+          "connections": 0.0,
+          "date": 0.0,
+          "row_idx": 0.0,
+          "config": 0.0,
+          "split": 0.0
+        },
+        "id_unique_per_date": true,
+        "n_duplicate_date_id": 0,
+        "connections_python_type": {
+          "ndarray": 12510
+        },
+        "n_empty_connections": 9977,
+        "n_nonempty_connections": 2533,
+        "date_sentinel_only": false,
+        "n_unique_dates": 10,
+        "id_min": 0,
+        "id_max": 12509
+      }
+    }
+  }
+}

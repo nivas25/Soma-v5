@@ -1,4 +1,4 @@
-.PHONY: setup download analyze windows export all test chat
+.PHONY: setup download analyze windows export all test chat up down
 
 setup:
 	uv sync --extra dev
@@ -28,3 +28,9 @@ test:
 
 chat:
 	uv run python -m soma_data.chat_app
+
+up:
+	uv run python scripts/soma_ctl.py up
+
+down:
+	uv run python scripts/soma_ctl.py down

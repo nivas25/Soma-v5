@@ -137,6 +137,17 @@ Copy `.env.example` to `.env` when you download the Hugging Face IRC dumps or ru
 
 ## Run the chat
 
+One command from the repo root starts both Modal apps, warms them, and starts the room. One command stops all of that.
+
+```powershell
+uv run python scripts/soma_ctl.py up
+uv run python scripts/soma_ctl.py down
+```
+
+`up` deploys `soma-gate` and `soma-reply`, calls each once so the H100 loads, and serves http://127.0.0.1:8787. If that page is already served by `python -m soma_data.chat_app`, `up` leaves the process alone so the room is not cleared. `down` stops both Modal apps and that local process. A stop clears the in-memory room.
+
+The steps below are the same work, one piece at a time.
+
 Run these from the repository root, in this order.
 
 ### 1. Python packages

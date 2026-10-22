@@ -35,6 +35,9 @@ models/
 .modal.toml
 .modal/
 
+# Local start/stop state (pid and chat log)
+.soma/
+
 # Raw IRC dumps — never git add data/raw
 data/raw/*
 !data/raw/.gitkeep

@@ -80,10 +80,14 @@ reports/lora_run/adapters/
 reports/lora_run/checkpoints/
 lora_run/adapters
 
-# Frontend (none in this repo; ignore if added)
+# Frontend
 frontend/node_modules/
 frontend/dist/
+web/node_modules/
+web/dist/
+web/*.tsbuildinfo
 node_modules/
+*.tsbuildinfo
 
 # OS / editor
 .DS_Store

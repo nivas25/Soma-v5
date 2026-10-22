@@ -1,4 +1,4 @@
-.PHONY: setup download analyze windows export all test
+.PHONY: setup download analyze windows export all test chat
 
 setup:
 	uv sync --extra dev
@@ -24,4 +24,7 @@ pilot-label:
 	uv run python scripts/06_silver_label_pilot.py
 
 test:
-	uv run pytest
+	uv run python -m pytest
+
+chat:
+	uv run python -m soma_data.chat_app

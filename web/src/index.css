@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: "Atkinson Hyperlegible", ui-sans-serif, sans-serif;
+  --font-display: "Syne", "Atkinson Hyperlegible", sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --primary: #000000;
+  --primary-foreground: #ffffff;
+  --secondary: #ffffff;
+  --secondary-foreground: #000000;
+  --muted: #ffffff;
+  --muted-foreground: #000000;
+  --accent: #000000;
+  --accent-foreground: #ffffff;
+  --border: transparent;
+  --input: #000000;
+  --ring: #000000;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #1c1917;
+  font-family: var(--font-sans);
+}
+
+@keyframes stage-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.stage-in,
+.msg-in {
+  animation: stage-in 160ms ease-out;
+}
+
+.typing-dots {
+  display: inline-flex;
+  gap: 0.2rem;
+  margin-left: 0.4rem;
+}
+
+.typing-dots span {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 999px;
+  background: currentColor;
+  animation: typing-dot 1s infinite;
+}
+
+.typing-dots span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.typing-dots span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes typing-dot {
+  0%,
+  80%,
+  100% {
+    opacity: 0.25;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+/* Sarvam AI inspired top dome gradient matching logo.png palette */
+.sarvam-peacock-flow {
+  position: relative;
+  background-color: #ffffff;
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.sarvam-peacock-dome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 520px;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 780px 500px at 50% 0%,
+    #094e43 0%,
+    #0b5d50 16%,
+    #0e6f60 30%,
+    #b48318 48%,
+    #d99b1c 62%,
+    #f2bf42 75%,
+    #fde58a 86%,
+    rgba(254, 243, 199, 0.25) 94%,
+    transparent 100%
+  );
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Clearly visible velvety matte grain finish */
+.sarvam-peacock-dome::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.28;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='matteFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23matteFilter)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.font-soma {
+  font-family: var(--font-display);
+}
+
+
